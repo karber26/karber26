@@ -1,0 +1,162 @@
+<html lang="en">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+body {
+    background-color: bisque;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+button {
+    margin: auto;
+    text-align: center;
+    
+}
+
+#heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    animation: heartbeat 1s infinite;
+    margin:0 auto;
+    padding:0%;
+    background-color:transparent;
+    border:0ch;
+}
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: rgb(255, 0, 0);
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+
+
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .75 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .75 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .75 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+  }
+}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <h1>
+        BABALAR GÜNÜN KUTLU OLSUN !
+    </h1>
+</body>
+
+
+<script type="text/javascript"> 
+    let count=0
+    function getRandomImage() {  
+    //declare an array to store the images  
+    var randomImage = new Array();  
+    //insert the URL of images in array  
+    randomImage[0] = "https://lh3.googleusercontent.com/pw/AM-JKLVMY-kmN_NicHkVX5OEf5val4MSTZMewhPkOgkVAY-j9J68ldnc9ovsJCCvzzPeggx71ox6J3LWZXvGW8teI3lXs92H_MJkgyM-DRIXLlAJ5BDrMUTxVTu-q9Tv54vJiLiw09g1LqdmoCNlN1YKH9gbeQ=s591-no?authuser=0";  
+    randomImage[1] = "https://lh3.googleusercontent.com/pw/AM-JKLW2tBfWTSfsRbufUvHb6k_za2rYsBL3q6AhIZ_fGkUoPA9hJ38Q7MQ9i99rYuETuLQEFzCJ7YPoBjJFYb3UVhq_QmdTdtdt1gJ5NaCj6Cis8yQ4AokPDtrUi7Xr3KGy7U4jYHTrbrKODM4vhlMZIzwLRg=s893-no?authuser=0";  
+    randomImage[2] = "https://lh3.googleusercontent.com/pw/AM-JKLV8og79lrxFF4fcb2bIUjFGZUU9NDaC2cfeXG4AG4OxqSXrQ3l_vaHePJIq09n24OZQ9P4WTjXyY4Lh2Py3UderFLalkIXWI_f-MhW0pBJIL7VUNzUg1ic1NhTslKdu2KxR9kZrOF4u5Yzs2aGT9N8XrA=w720-h540-no?authuser=0";  
+    randomImage[3] = "https://lh3.googleusercontent.com/pw/AM-JKLWyG3XocZrbV6irVCb95sDvxoLcdvY43e9BIeBdl1_T8LFYoiD-WXpM2YIOoOy5u7tPmozA4p8VwhuavizxkM1GoikYskie0ypdccsj3wfFfu9ZJCCSFsXVjlqNZBU6zoN1yUTH8nyB9H4-4NeTsOHpng=w1600-h777-no?authuser=0";  
+    randomImage[4] = "https://lh3.googleusercontent.com/pw/AM-JKLUbl0oq-GTpV2ABv6jlzbiAPKOHfTkw_75LLD7auzTkimOm8eH_mACPr4a4ywT6OYkFEEYfzo3AbDyX-p0PdzkL8HaldY8WRzuIRSPGmvhLKJsXqduD8M3GkqSUCM84-ZJJSAbdAVFaHvBoTnG5vwThxg=w403-h893-no?authuser=0";  
+    randomImage[5] = "https://lh3.googleusercontent.com/pw/AM-JKLWbfY19tE5aCfv_6LsSR1wRRpoOYeqRyKt3nAyKC2029ejzDy0JbU_kxsrP0_5c85v7NGtXDUjkr_RXCOtW8KLhp8dijXxTllAcCZNciDqqU_a-mR355gQfEYl1fz-gtCp6EJgaFhKmFlDA9Gqev34jaw=w403-h893-no?authuser=0";  
+    randomImage[6] = "https://lh3.googleusercontent.com/pw/AM-JKLVsKR41tbab0SuAhuyCfldqdX9qPRfoLMAEXl8v7LdbCwuAin9TTjFIVjzonmqOiyH5gThKxwlTfM9wINqJBC5MN3415WJGKLok8CrYYa1MGkxsbldswdu13onATJGEh2H8o8jyMflCFC6VSTSs30HHCA=w670-h893-no?authuser=0";
+    randomImage[7] ="https://lh3.googleusercontent.com/pw/AM-JKLWgC26eSUVRkk2iF4tZeewWBEINl1l0zqTFWvk1JfpgVmxqQLYCmBR2TyEaGmtK1TTxPC--u-0X2aUmktGkhBxIdvB20qx7ou3FXgYjYLZ9pPgyzBClYLfPFAi9Wce1kKpToqLXRFAru5u0KFuviNkbSQ=w670-h893-no?authuser=0";
+    randomImage[8] ="https://lh3.googleusercontent.com/9kE3I_RM9_eorXdy3m6ajOuDSEZkhJ0qgVTIRFJrwlXRhhj--Qq8FtJJDzdloebyuZsJ-Dw2hSiOIu4UWgG2597PSMQ4EiFOHdTmRKSc_SPrlOK-93tKqIQLqGJEboeF9811_xfLqVknR7XDFMimTGnkdFRCsFMxvBgd4Ge-qudPepSNOcwJhdjo_hnMY9kDYxErZOITzdYXQWztZsT1R_l2MlggVXVhTFbY-MDSDVa-ubM0IKuJTI6ZB0BzedjuX_AS33KCv2BqQnnFkWoNwiQ4_qQz_4t-pvE4YHUqy9kDB-u15MPNz59_BIigXeejG83NoCmwq6faC5lNn7Ab3wBm3P6LAEA5STu46DWtngtau50oB8h_Z46uH8gTlOqDsEyTIX8IlOtCSVjjIDJ297GDR31LBRrwh6KN2FovLnkLEnPV4YCEUJXNXKV4QEdbniUkAI9mlS_TYSsxFVteJkGdcY2peafsQct-_tYQ6SpEexxxh-qZt-3u_bhqYrqWkzUwdAGAD_2ayXmRza-CxvP9GZxT_nmVY-ouEtA3q0nxjS6mVs-mjRXPCqi8qGAlNNAUf-oKRyfThj0KlzldOTaOxf8M7HOOAlodV-2QBLgs056teo5aRT5ujZ6oyGB7btFkPiec3ChWlM8WsZ3pTdZeXbBo2pbbqfxh1Yc8o88u6Sx9SvJEdutwXolaMfsi-eQADu69YwqFWp_JrOIKr9_CNuGFRRwKj_pqOJlWs4CMs66aQzhLw8rsgCmzX6Ik_Et-Z7x4yh4-9XHqjeEWYLdOYDciGQdT0g=w423-h893-no?authuser=0";
+    randomImage[9] ="https://lh3.googleusercontent.com/3xagpIvtWWu7qBVbwG587l2rhjxEGVaqITuKsiWS8D2XTWQnEfkFZBjU8Rj-0ttUlOBhOTaEY9kGvY4atZCf2Psj5iCys1twiAGkDgB5koQWzEfQY8wTKVGZapgbPjxTAt3UYpvmkSh2HHZOgtckIKsYs9nxqwTyxn-L-PpT76TrPA-mSTfL_fDnbY_nk3K1KYxmaS2esLSA7tx_PPp6Davc4mXpv_2o-X3p_C_wSuZls5nTRcLxzCbwlbGqXcK28xJOgqmD-n2ztbZypQ8mlEJhaLUqsbAv9SXTK8gP71BAWQ25geLW0VT-FALZuDkMNS5d52BYusUPp62ZlXspPMnGM9xnrY99rEPxSAP8gtulKm273Ptgg164e5Y1R31jPM_k2NPgo4-5MjC5x4f48eaKa5cS2OK4RTr37Jnv_2w5O-HiHz-8h1gxoOrfMjERjOYzyheGBa3aSKIrMqkw06SARSGpLojmvgjGNA63SrQoBVL3EBMNNeH5cpWcpFFj6M4D6kvezMHYZzcU4qrBUt985WmixIP_97o4l3ibdsERHYrcXTv0duoUbcgRNOP8FhTyTxAugEQrQfBX8BFtBh75ts_e1Yhbj_wGhWbIa7iVLSY5SEEuulHwOQnLkhH6-seFxM_OWLpgJQ5LdVCWbKJuo0d3wzSK6BsFzC7_i_OYv-fuVmE475W9zV_cgIAKqq8DTvSgBi1DLjuChaMPxEpZMESmthlX8iXJxymc3f5BZzsVe5xZ1ijVRZZBnh8zSGBJsTdI0OHQ76XMnJy9Fw6Pn679UmzBDA=w960-h720-no?authuser=0"
+    randomImage[10] ="https://lh3.googleusercontent.com/xIv36C1jLUdf-mhn9V2syvVYDAGDnROJEQnpiQNpND8Prf2jAfU7Kqy3AzFvM1Tow-Gd5DjW9tgg4YoZRc_H6jTars2gA2QzMg_CNiMY0EwT7QyMLfzeIJtvOakkHaTvYKW32cS3H8ZAdPQzqHEbB89JCk1UTCExeX0cU9jCNH3FnNCd2huQxiTVrZDT0d8526HrbIdeG32LiDCo56YTM87XjYdyRGjphFh3ByDUI9QXFP_32O5tEocKOkUtsoJeHPyplP97acZMmy6sSiWxymc78Ijs0W8sxTqLe7LlpXtmurl84xooslnilS1QEZQ6d51rm8AEGJ7FJbVXFllaXvc8LM-QrW28e2dIGy-EPxU4MJkGJGsGecOUDwq2DORia0lhVPRvytwwAxwrEVm1CczsPaf86pjdfaHFYnA_1bKGsWGI57FNR44K7Ufla4_lhcHL_XipGucpyFo7VTkbeIE-FdK5JpNrc9cSTInJjhIZQOlMmWuyHEW3RPaWml7Rt1FyIQQy1Xc31aNrhq5fwKjZxMfvLFbgFkrAw_SVBpLwigLdBvnjuvfObNsXSNMar-GjGbn_8B4HOwp4d2JpmKXTdtYQXh3qYXVeh2rEkODyUR73xY2FxlDXQJhr0H7pEPt4_kgQzn8YtKLWcs49Zg9sJaVvwB-2KODcM_HMUnhoVARe3kdbo5QXSthhjU0jcnoysHgUihFJyhFSc1uHT_OPfJWREHdy1jatLlnG7ojuu2k0iZnM7uUqq1H1c2A5edPSDHeb8VYUWAGDuF6cQMkVKeW9nDH9=w423-h893-no?authuser=0"
+    
+    //loop to display five randomly chosen images at once  
+    for (let i=0; i< 1; i++) {  
+    //generate a number and provide to the image to generate randomly  
+    var number = Math.floor(Math.random()*randomImage.length);  
+    //print the images generated by a random number  
+    document.getElementById("result").innerHTML += '<img src="'+ randomImage[number] +'" style="width:150px" />'; 
+    
+    
+    count++;
+    if (count > 25){
+        window.alert("Babalar günün kutlu olsun canum babam.")
+        count=0
+    }
+    else{}
+    
+        }
+    
+    
+    
+    
+    
+    }  
+</script>
+
+
+
+
+<div style="text-align:center;">
+<button id="heart" type="button" onclick="getRandomImage()">Tıkla</button>
+</div>
+<br> <br>  
+<span id="result"> </span>   
+</html>
